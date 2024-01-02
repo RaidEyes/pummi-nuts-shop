@@ -27,16 +27,22 @@ function Service() {
     },
   ];
   return (
-    <div>
+    <div className="bg-amber-500 h-[100vh] px-12 py-32 flex flex-col gap-16">
       <h2>Dịch vụ</h2>
-      <div>
-        <ul>
+      <div className="px-12">
+        <ul className="grid grid-cols-3 gap-12 auto-cols-min">
           {Services.map(({ service, img, alt, description }: ServiceType) => (
-            <li>
-              <div>
-                <h2>{service}</h2>
-                <img src={img} alt={alt} />
-                <p>{description}</p>
+            <li key={service}>
+              <div className="group overflow-hidden relative after:absolute after:inset-0 after:bg-black after:opacity-0 hover:after:opacity-60 after:transition-opacity after:duration-500 after:z-[0] ">
+                <div className="absolute top-[40%] left-[50%] translate-x-[-50%] z-10 opacity-0 group-hover:opacity-100 transition-opacity hover:duration-200">
+                  <h2 className="z-10 mb-8 text-3xl text-white ">{service}</h2>
+                  <p className="text-white">{description}</p>
+                </div>
+                <img
+                  className="aspect-[3/3.5] object-cover group-hover:scale-110 group-transition-[scale] group-hover:duration-700"
+                  src={img}
+                  alt={alt}
+                />
               </div>
             </li>
           ))}

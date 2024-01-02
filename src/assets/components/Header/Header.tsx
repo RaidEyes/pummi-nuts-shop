@@ -16,7 +16,7 @@ function Header() {
         />
         <ul className="flex flex-row gap-12">
           {NavComponents.map((component: string) => (
-            <li>
+            <li key={component}>
               <a
                 className="relative text-2xl text-white before:absolute before:inset-0 before:bg-amber-100 before:w-0 hover:before:w-full before:transition-[width] before:ease-in-out before:duration-[400ms] px-4 py-1 transition-colors hover:text-black before:z-[-1] duration-[450ms] before:rounded-xl"
                 href="#"
