@@ -12,39 +12,22 @@ function Header() {
         <img
           src="/img/Logo.png"
           alt="pummi nuts shop logo"
-          className="max-w-[80px]"
+          className="max-w-[90px]"
         />
-        <ul className="flex flex-row gap-6">
+        <ul className="flex flex-row gap-12">
           {NavComponents.map((component: string) => (
             <li>
-              <a className="text-2xl text-white" href="#">
+              <a
+                className="relative text-2xl text-white before:absolute before:inset-0 before:bg-amber-100 before:w-0 hover:before:w-full before:transition-[width] before:ease-in-out before:duration-[400ms] px-4 py-1 transition-colors hover:text-black before:z-[-1] duration-[450ms] before:rounded-xl"
+                href="#"
+              >
                 {component}
               </a>
             </li>
           ))}
-          {/* <li>
-            <a className="text-2xl text-white" href="#">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="text-2xl text-white" href="#">
-              About
-            </a>
-          </li>
-          <li>
-            <a className="text-2xl text-white " href="#">
-              Products
-            </a>
-          </li>
-          <li>
-            <a className="text-2xl text-white" href="#">
-              Contact
-            </a>
-          </li> */}
         </ul>
       </nav>
-      <div className="flex flex-col items-center justify-center gap-10 text-center text-white">
+      <div className="flex flex-col items-center justify-center gap-12 text-center text-white">
         <h1 className="text-6xl">Tết đủ đầy, hạt ngon sum vầy</h1>
         <button className="btn" type="button">
           Xem thêm
