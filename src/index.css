@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.505);
+  z-index: -1;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 font-semibold text-center transition-colors border-4 border-white rounded-xl hover:bg-white hover:text-black;
+  }
+}

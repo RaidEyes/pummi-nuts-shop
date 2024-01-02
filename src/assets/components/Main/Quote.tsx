@@ -1,6 +1,6 @@
 function Quote() {
   return (
-    <div>
+    <div className="h-[100vh] bg-[url('/img/quote.png')] bg-no-repeat bg-cover">
       <p>
         “Cuộc sống hối hả, đôi khi khiến chúng ta quên đi chăm sóc cho chính
         mình. Giữa guồng quay ấy, đừng quên dành chút thời gian lắng nghe cơ
