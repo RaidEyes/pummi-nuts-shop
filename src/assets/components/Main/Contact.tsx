@@ -1,16 +1,27 @@
 function Contact() {
+  type FormType = {
+    name: string;
+    type: string;
+    description: string;
+  };
+
+  const formComponent: FormType[] = [
+    { name: "name", type: "text", description: "Tên Bạn" },
+    { name: "email", type: "email", description: "Email Bạn" },
+    { name: "phone", type: "number", description: "Số điện thoại Bạn" },
+    { name: "demand", type: "text", description: "Bạn cần gì?" },
+  ];
   return (
     <div>
-      <form action="submit">
-        <label>Liên hệ shop nhé!</label>
-        <label htmlFor="name">Tên Bạn</label>
-        <input type="text" id="name" name="name" />
-        <label htmlFor="email">Email Bạn</label>
-        <input type="email" id="email" name="email" />
-        <label htmlFor="phone">Số điện thoại Bạn</label>
-        <input type="number" id="phone" name="phone" />
-        <label htmlFor="demand">Bạn cần gì</label>
-        <input type="text" id="demand" name="demand" />
+      <form id="form" action="submit">
+        <h3>Liên hệ shop nhé!</h3>
+        {formComponent.map(({ name, type, description }: FormType) => (
+          <div key={name}>
+            <label htmlFor={name}>{description}</label>
+            <input type={type} id={name} name={name} />
+          </div>
+        ))}
+
         <button type="button">Gửi</button>
       </form>
       <div>

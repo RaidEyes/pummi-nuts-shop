@@ -1,8 +1,6 @@
 function AnimationBowl() {
   return (
-    <div>
-      <img src="/img/6.png" alt="a bowl of mixed nuts" />
-    </div>
+    <div className="h-[100vh] bg-[url(/img/6.png)] bg-no-repeat bg-cover"></div>
   );
 }
 

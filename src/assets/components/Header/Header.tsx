@@ -8,7 +8,7 @@ function Header() {
       className=" h-[100vh] flex flex-col items-center justify-center"
       id="header"
     >
-      <nav className="bg-transparent fixed flex flex-row items-center justify-between w-full px-[2rem] py-[1rem] top-0 ">
+      <nav className="bg-transparent fixed flex flex-row items-center justify-between w-full px-[2rem] py-[1rem] top-0 z-[100]">
         <img
           src="/img/Logo.png"
           alt="pummi nuts shop logo"
