@@ -12,7 +12,7 @@ function Contact() {
     { name: "demand", type: "text", description: "Bạn cần gì?" },
   ];
   return (
-    <div className="grid items-center grid-cols-2 gap-12 px-12 py-24 text-center place-items-center">
+    <div className="grid items-center grid-cols-1 gap-12 px-12 py-24 text-center lg:grid-cols-2 place-items-center">
       <form
         className=" rounded-xl flex flex-col items-center lg:max-w-[70%] justify-center gap-8 px-4 py-8 text-center bg-amber-100"
         id="form"
