@@ -20,7 +20,7 @@ function Cursor() {
   }, []);
   return (
     <div
-      className="absolute w-2 bg-white aspect-square"
+      className="absolute w-6 transition-all duration-100 rounded-[50%] ease-linear bg-white aspect-square"
       style={{ top: `${mouse.y}px`, left: `${mouse.x}px` }}
     ></div>
   );
