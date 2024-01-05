@@ -19,12 +19,18 @@ function Quote() {
 
   useEffect(() => {
     const words = document.querySelectorAll(".each-word");
-    words.forEach((word): void => {
-      word.addEventListener("mouseover", (e) => {
-        const targetElement = e.target as HTMLSpanElement;
-        targetElement.style.opacity = "1";
-      });
+    function hoverOpacity(e: Event) {
+      const targetElement = e.target as HTMLSpanElement;
+      targetElement.style.opacity = "1";
+    }
+    words.forEach((word) => {
+      word.addEventListener("mouseover", hoverOpacity);
     });
+    return () => {
+      words.forEach((word) =>
+        word.removeEventListener("mouseover", hoverOpacity)
+      );
+    };
   }, [processedWord]);
 
   return (
