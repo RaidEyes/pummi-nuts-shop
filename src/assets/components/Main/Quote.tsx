@@ -39,8 +39,8 @@ function Quote() {
         "
         {processedWord.map((word: string, index: number) => (
           <span
-            className="each-word lg:text-3xl"
-            style={{ opacity: "0", transition: "all ease-in 450ms" }}
+            className="each-word lg:opacity-0 lg:text-3xl"
+            style={{ transition: "all ease-in 450ms" }}
             key={index}
           >
             {word}{" "}

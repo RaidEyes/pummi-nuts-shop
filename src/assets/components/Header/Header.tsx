@@ -66,7 +66,7 @@ function Header() {
         <h1 className="px-6 text-3xl md:text-6xl">
           Tết đủ đầy, hạt ngon sum vầy
         </h1>
-        <button className="btn" type="button">
+        <button className="z-10 btn" type="button">
           Xem thêm
         </button>
       </div>
