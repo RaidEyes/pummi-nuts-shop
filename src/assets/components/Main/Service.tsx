@@ -27,7 +27,7 @@ function Service() {
     },
   ];
   return (
-    <div className="bg-[#EDE2B2] lg:min-h-[100vh] px-12 py-12 flex flex-col gap-16">
+    <div className="bg-[#d7d0ae] lg:min-h-[100vh] px-12 py-12 flex flex-col gap-16">
       <h2 className="text-6xl font-bold text-center uppercase lg:pl-10 lg:text-left">
         Dịch vụ
       </h2>
