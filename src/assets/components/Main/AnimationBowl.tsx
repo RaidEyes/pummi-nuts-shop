@@ -1,76 +1,41 @@
 function AnimationBowl() {
   return (
-    <div className="min-h-[100vh] bg-[url(/img/table-background.png)] content-center bg-no-repeat bg-cover bg-center grid justify-items-center">
-      <div className="flex flex-row">
-        <div className="flex flex-col">
-          <div className="flex items-center justify-end">
-            <p className="text-white sm:text-md md:text-lg lg:text-2xl ">
-              Việt Quất - Blueberry
-            </p>
-            <img
-              src="/img/Arrow.png"
-              alt="Arrow icon"
-              className="max-w-[20%] scale-[-1] rotate-[45deg]"
-            />
-          </div>
-          <div className="flex items-center justify-end">
-            <img
-              src="/img/Arrow.png"
-              alt="Arrow icon"
-              className="max-w-[20%] scale-y-[-1] rotate-[-45deg]"
-            />
-            <p className="text-white sm:text-md md:text-lg lg:text-2xl ">
-              Sữa Chua Hy Lạp - Greek Yogurt
-            </p>
-          </div>
-          <div className="flex items-center justify-end">
-            <p className="text-white sm:text-md md:text-lg lg:text-2xl ">
-              Nho Khô - Raisin
-            </p>
-            <img
-              src="/img/Arrow2.png"
-              alt="Arrow icon"
-              className="max-w-[20%] rotate-[45deg]"
-            />
-          </div>
-        </div>
+    <div className="min-h-[100vh] relative bg-[url(/img/table-background.png)] content-center bg-no-repeat bg-cover bg-center grid justify-items-center">
+      <div className="transition-all ease-in-out duration-500 absolute w-full md:max-w-[60%] z-[2] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] px-8">
         <img
-          className="max-w-[30rem] self-center"
+          className="max-w-full"
           src="/img/granola-bowl.png"
           alt="granola bowl"
         />
-        <div className="flex flex-col">
-          <div className="flex items-center">
-            <img
-              src="/img/Arrow.png"
-              alt="Arrow icon"
-              className="max-w-[20%] scale-[-1] rotate-[45deg]"
-            />
-            <p className="text-white sm:text-md md:text-lg lg:text-2xl ">
-              Việt Quất - Blueberry
-            </p>
-          </div>
-          <div className="flex items-center">
-            <p className="text-white sm:text-md md:text-lg lg:text-2xl ">
-              Việt Quất - Blueberry
-            </p>
-            <img
-              src="/img/Arrow.png"
-              alt="Arrow icon"
-              className="max-w-[20%] scale-[-1] rotate-[45deg]"
-            />
-          </div>
-          <div className="flex items-center">
-            <img
-              src="/img/Arrow.png"
-              alt="Arrow icon"
-              className="max-w-[20%] scale-[-1] rotate-[45deg]"
-            />
-            <p className="text-white sm:text-md md:text-lg lg:text-2xl ">
-              Việt Quất - Blueberry
-            </p>
-          </div>
-        </div>
+      </div>
+      <div className="z-[1] absolute w-full transition-all duration-500 ease-in-out md:max-w-[60%] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] px-8">
+        <img
+          className="max-w-full"
+          src="/img/granola-bowl-animation.png"
+          alt="granola bowl"
+        />
+      </div>
+      <div className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] grid grid-cols-2 grid-rows-2 gap-x-[50vw] gap-y-[55vw] md:gap-x-[45vw] px-8 w-full md:gap-y-[25vw]">
+        <p className="p-4 text-black bg-white border-2 rounded-lg justify-self-end">
+          Bổ sung năng lượng
+        </p>
+        <p className="p-4 text-black bg-white border-2 rounded-lg justify-self-start">
+          Chống oxi hóa
+        </p>
+        <p className="p-4 text-black bg-white border-2 rounded-lg justify-self-end">
+          Ăn sáng ngon miệng
+        </p>
+        <p className="p-4 text-black bg-white border-2 rounded-lg justify-self-start">
+          Đẩy đủ dinh dưỡng
+        </p>
+      </div>
+      <div className="absolute flex flex-row gap-4 bottom-12">
+        <button type="button" className="text-lg text-white btn">
+          {"<"}
+        </button>
+        <button type="button" className="text-lg text-white btn">
+          {">"}
+        </button>
       </div>
     </div>
   );

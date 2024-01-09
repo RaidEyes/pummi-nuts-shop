@@ -33,6 +33,6 @@ body::before {
 
 @layer components {
   .btn {
-    @apply px-4 py-2 font-semibold text-center transition-colors border-4 border-white rounded-xl hover:bg-white hover:text-black;
+    @apply px-4 py-2 font-semibold text-center transition-colors border-2 border-white rounded-xl hover:bg-white hover:text-black;
   }
 }
