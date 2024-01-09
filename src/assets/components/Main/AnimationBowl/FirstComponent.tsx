@@ -1,6 +1,6 @@
-function AnimationBowl() {
+function FirstComponent() {
   return (
-    <div className="min-h-[100vh] relative bg-[url(/img/table-background.png)] content-center bg-no-repeat bg-cover bg-center grid justify-items-center">
+    <div>
       <div className="transition-all ease-in-out duration-500 absolute w-full md:max-w-[60%] z-[2] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] px-8">
         <img
           className="max-w-full"
@@ -29,7 +29,7 @@ function AnimationBowl() {
           Đẩy đủ dinh dưỡng
         </p>
       </div>
-      <div className="absolute flex flex-row gap-4 bottom-12">
+      <div className="absolute flex translate-x-[-50%] flex-row gap-4 bottom-12">
         <button type="button" className="text-lg text-white btn">
           {"<"}
         </button>
@@ -41,4 +41,4 @@ function AnimationBowl() {
   );
 }
 
-export default AnimationBowl;
+export default FirstComponent;
