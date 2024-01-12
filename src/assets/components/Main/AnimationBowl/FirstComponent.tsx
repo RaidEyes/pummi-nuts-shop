@@ -89,13 +89,13 @@ function FirstComponent() {
       <div className="absolute transition-all duration-[1200ms] ease-in-out left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] grid grid-cols-2 grid-rows-2 gap-x-[50vw] gap-y-[55vw] md:gap-x-[45vw] px-8 w-full md:gap-y-[25vw]">
         <p
           ref={paragraphRef1}
-          className="p-4 transition-all duration-[1200ms] text-black bg-white border-2 rounded-lg justify-self-end"
+          className="p-4 transition-all duration-[900ms] text-black bg-white border-2 rounded-lg justify-self-end"
         >
           {paragraph1}
         </p>
         <p
           ref={paragraphRef2}
-          className="p-4 transition-all duration-[1200ms] text-black bg-white border-2 rounded-lg justify-self-start"
+          className="p-4 transition-all duration-[900ms] text-black bg-white border-2 rounded-lg justify-self-start"
         >
           {paragraph2}
         </p>
