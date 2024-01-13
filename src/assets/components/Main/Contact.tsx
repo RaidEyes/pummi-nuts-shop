@@ -14,7 +14,7 @@ function Contact() {
   return (
     <div className="z-20 grid items-center grid-cols-1 gap-12 px-12 py-24 text-center lg:grid-cols-2 place-items-center">
       <form
-        className=" z-20 rounded-xl flex flex-col items-center lg:max-w-[70%] justify-center gap-8 px-4 py-8 text-center bg-amber-100"
+        className=" z-20 rounded-xl flex flex-col items-center lg:max-w-[70%] justify-center gap-8 px-4 py-8 text-center bg-[#86A789]"
         id="form"
         action="submit"
       >
@@ -24,8 +24,15 @@ function Contact() {
             className="flex flex-row items-center justify-between w-full gap-4"
             key={name}
           >
-            <label htmlFor={name}>{description}</label>
-            <input className="rounded-md" type={type} id={name} name={name} />
+            <label className="w-full" htmlFor={name}>
+              {description}
+            </label>
+            <input
+              className="w-[90%] lg:w-auto rounded-md"
+              type={type}
+              id={name}
+              name={name}
+            />
           </div>
         ))}
         <button className="btn" type="button">
