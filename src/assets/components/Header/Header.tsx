@@ -26,10 +26,7 @@ function Header() {
   };
 
   return (
-    <header
-      className=" h-[100vh] flex flex-col items-center justify-center"
-      id="header"
-    >
+    <header className="flex flex-col items-center justify-center " id="header">
       <nav className="bg-transparent fixed flex flex-row items-center justify-center lg:justify-between w-full px-[2rem] py-[1rem] top-0 z-[100]">
         <img
           src="/img/Logo.png"
@@ -62,14 +59,6 @@ function Header() {
           ))}
         </ul>
       </nav>
-      <div className="flex flex-col items-center justify-center gap-12 text-center text-white">
-        <h1 className="px-6 text-3xl md:text-6xl">
-          Tết đủ đầy, hạt ngon sum vầy
-        </h1>
-        <button className="z-10 btn" type="button">
-          Xem thêm
-        </button>
-      </div>
     </header>
   );
 }

@@ -1,16 +1,20 @@
-import Cursor from "./assets/components/Cursor/Cursor";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./assets/components/Header/Header";
-import Main from "./assets/components/Main/Main";
+
+import Home from "./assets/components/Pages/Home";
 
 function App() {
   return (
-    <>
-      <div>
-        <Cursor />
+    <div className="App">
+      <BrowserRouter>
         <Header />
-        <Main />
-      </div>
-    </>
+        <div className="pages">
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
   );
 }
 
