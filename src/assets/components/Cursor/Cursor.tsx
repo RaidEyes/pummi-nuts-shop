@@ -55,7 +55,7 @@ function Cursor() {
     <>
       {cursorComponent.map(({ name, duration, width }) => (
         <div
-          className="z-[0] hidden lg:block absolute shadow-xl brightness-125 shadow-white transition-all translate-x-[-50%] translate-y-[-50%] rounded-[50%] ease-linear bg-white aspect-square"
+          className="z-[1] cursor-default hidden lg:block absolute shadow-xl brightness-125 shadow-white transition-all translate-x-[-50%] translate-y-[-50%] rounded-[50%] ease-linear bg-white aspect-square"
           key={name}
           style={{
             top: `${mouse.y}px`,

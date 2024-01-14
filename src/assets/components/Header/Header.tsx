@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   type NavType = { name: string; src: string }[];
@@ -49,12 +50,12 @@ function Header() {
               key={name}
             >
               <img src={src} className="w-[40px] mr-8 lg:hidden" alt="icon" />
-              <a
+              <Link
                 className="relative text-2xl text-white before:absolute before:inset-0 before:bg-amber-100 before:w-0 group-hover:before:w-full before:transition-[width] before:ease-in-out before:duration-[400ms] px-4 py-1 transition-colors group-hover:text-black before:z-[-1] duration-[450ms] before:rounded-md"
-                href="#"
+                to={name}
               >
                 {name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

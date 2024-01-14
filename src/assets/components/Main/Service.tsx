@@ -55,10 +55,10 @@ function Service() {
       style={{ backgroundImage: `url(${backgroundImg})` }}
       className="before:z-[0] before:bg-[#86A789] before:transition-all before:duration-500 before:absolute relative before:inset-0 lg:min-h-[100vh] px-12 py-12 flex flex-col gap-16"
     >
-      <h2 className="text-6xl font-bold text-center uppercase lg:pl-10 lg:text-left">
+      <h2 className="z-10 text-6xl font-bold text-center uppercase lg:pl-10 lg:text-left">
         Dịch vụ
       </h2>
-      <div className="px-12">
+      <div className="z-10 px-12 ">
         <ul className="grid grid-cols-1 grid-rows-3 gap-12 lg:grid-rows-1 sm:grid-rows-2 sm:grid-cols-2 lg:grid-cols-3">
           {Services.map(
             ({ service, img, alt, description, index }: ServiceType) => (
