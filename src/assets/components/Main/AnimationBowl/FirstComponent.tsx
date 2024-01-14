@@ -112,7 +112,7 @@ function FirstComponent() {
           {paragraph4}
         </p>
       </div>
-      <div className="absolute flex translate-x-[-50%] flex-row gap-4 bottom-12">
+      <div className="z-10 absolute flex translate-x-[-50%] flex-row gap-4 bottom-12">
         <button
           onClick={handleBack}
           type="button"
