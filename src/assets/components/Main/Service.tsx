@@ -53,7 +53,7 @@ function Service() {
     <div
       ref={background}
       style={{ backgroundImage: `url(${backgroundImg})` }}
-      className="before:z-[0] before:bg-[#86A789] before:transition-all before:duration-500 before:absolute relative before:inset-0 lg:min-h-[100vh] px-12 py-12 flex flex-col gap-16"
+      className="before:z-[0] before:bg-[#86A789] bg-no-repeat bg-center bg-cover before:transition-all before:duration-500 before:absolute relative before:inset-0 lg:min-h-[100vh] px-12 py-12 flex flex-col gap-16"
     >
       <h2 className="z-10 text-6xl font-bold text-center uppercase lg:pl-10 lg:text-left">
         Dịch vụ
