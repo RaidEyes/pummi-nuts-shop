@@ -41,16 +41,19 @@ function Service() {
     const event = e.target as HTMLLIElement;
     const imgSource = event.dataset.index;
     if (imgSource) setBackgroundImg(imgSource);
+    background.current?.classList.add("before:opacity-[0.2]");
   };
 
   const handleMouseLeave = (): void => {
+    background.current?.classList.remove("before:opacity-[0.2]");
+
     setBackgroundImg("");
   };
   return (
     <div
       ref={background}
       style={{ backgroundImage: `url(${backgroundImg})` }}
-      className="before:z-[-1] before:bg-[#86A789] transition-all before:absolute relative before:inset-0 lg:min-h-[100vh] px-12 py-12 flex flex-col gap-16"
+      className="before:z-[0] before:bg-[#86A789] before:transition-all before:duration-500 before:absolute relative before:inset-0 lg:min-h-[100vh] px-12 py-12 flex flex-col gap-16"
     >
       <h2 className="text-6xl font-bold text-center uppercase lg:pl-10 lg:text-left">
         Dịch vụ
