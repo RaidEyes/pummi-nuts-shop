@@ -73,7 +73,7 @@ function Service() {
                   data-index={img}
                   className="group rounded-2xl overflow-hidden relative after:absolute after:inset-0 after:bg-black after:opacity-0 hover:after:opacity-60 after:transition-opacity after:duration-500 after:z-[0] "
                 >
-                  <div className="absolute px-8 w-full top-[40%] left-[50%] translate-x-[-50%] z-10 opacity-0 group-hover:opacity-100 transition-opacity hover:duration-200">
+                  <div className="absolute px-8 w-full lg:top-[40%] top-[20%] left-[50%] translate-x-[-50%] z-10 opacity-0 group-hover:opacity-100 transition-opacity hover:duration-200">
                     <h2 className="font-bold z-10 mb-8 sm:text-3xl text-[7vw] uppercase text-white ">
                       {service}
                     </h2>
