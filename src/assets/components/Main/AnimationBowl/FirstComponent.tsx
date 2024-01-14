@@ -116,14 +116,14 @@ function FirstComponent() {
         <button
           onClick={handleBack}
           type="button"
-          className="text-lg text-white btn"
+          className="z-10 text-lg text-white btn"
         >
           {"<"}
         </button>
         <button
           onClick={handleNext}
           type="button"
-          className="text-lg text-white btn"
+          className="z-10 text-lg text-white btn"
         >
           {">"}
         </button>
