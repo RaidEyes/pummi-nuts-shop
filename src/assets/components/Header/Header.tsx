@@ -46,7 +46,7 @@ function Header() {
         >
           {NavComponents.map(({ name, src }: { name: string; src: string }) => (
             <li
-              className="flex flex-row transition-transform duration-500 group hover:translate-x-8"
+              className="flex flex-row transition-transform duration-500 cursor-pointer group hover:translate-x-8"
               key={name}
             >
               <img src={src} className="w-[40px] mr-8 lg:hidden" alt="icon" />
