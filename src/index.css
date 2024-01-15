@@ -7,10 +7,6 @@
   font-family: "Baloo Chettan 2", sans-serif;
 }
 
-a:-webkit-any-link {
-  cursor: default;
-}
-
 body {
   min-height: 100vh;
   display: flex;
