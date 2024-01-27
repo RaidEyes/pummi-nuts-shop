@@ -20,7 +20,7 @@ function Products() {
       name: "Đậu Phộng",
       spice: "tỏi ớt",
       price: "35,000 Đ",
-      quantity: 500,
+      quantity: 250,
     },
   ];
 
