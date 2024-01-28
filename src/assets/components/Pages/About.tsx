@@ -17,7 +17,7 @@ function About() {
         alt="illustration photos"
         src="/img/about-img.png"
       />
-      <div className="flex flex-col items-center justify-center gap-8 pt-12 lg:block">
+      <div className="flex flex-col items-center justify-center gap-8 pt-16 lg:block">
         <img
           className="lg:max-w-[50%] max-w-[90%] lg:float-left lg:mr-12 lg:order-0 order-1"
           alt="illustration photos of nuts"
